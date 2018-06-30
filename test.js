@@ -5,5 +5,7 @@ const biu = require( './lib' )
 const entry = path.resolve( __dirname, 'example/index.js' )
 const dest = path.resolve( process.cwd(), 'dist.js' )
 
-const content = biu( entry )
+const content = biu( entry, {
+  name: 'www'
+} )
 fs.writeFileSync( dest, content )
