@@ -1,2 +1,10 @@
 import a from './a.js'
-a()
+
+export default {
+  x() {
+    console.log( 'x' )
+  },
+  y() {
+    a()
+  }
+}
