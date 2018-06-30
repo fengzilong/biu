@@ -1,11 +1,10 @@
 const path = require( 'path' )
-const fs = require( 'fs' )
 const biu = require( './lib' )
 
 const entry = path.resolve( __dirname, 'example/index.js' )
-const dest = path.resolve( process.cwd(), 'dist.js' )
+const outDir = path.resolve( process.cwd(), '.out' )
 
-const content = biu( entry, {
-  name: 'www'
+biu( entry, {
+  name: 'www',
+  outDir
 } )
-fs.writeFileSync( dest, content )
