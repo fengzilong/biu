@@ -4,8 +4,10 @@ import './index2.css'
 import './style.less'
 
 export default {
-  x() {
+  async x() {
     console.log( 'x' )
+    const lazy = await import( './lazy' )
+    lazy()
   },
   y() {
     a()
