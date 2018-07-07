@@ -3,12 +3,12 @@ import b from './utils/b.js'
 import './index.css'
 import './index2.css'
 import './style.less'
-import vue from 'vue'
+// import vue from 'vue'
 
 export default {
   x() {
     console.log( 'x' )
-    console.log( vue )
+    // console.log( vue )
   },
   y() {
     a()
