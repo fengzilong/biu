@@ -1,4 +1,4 @@
-import b from './b.js'
+import b from './b'
 
 export default function () {
   console.log( 'a' )

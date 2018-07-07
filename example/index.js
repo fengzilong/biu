@@ -1,5 +1,5 @@
-import a from './utils/a.js'
-import b from './utils/b.js'
+import a from './utils/a'
+import b from './utils/b'
 import './index.css'
 import './index2.css'
 import './style.less'
