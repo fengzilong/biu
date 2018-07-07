@@ -5,7 +5,7 @@ import './index2.css'
 import './style.less'
 // import vue from 'vue'
 
-export default {
+const obj = {
   x() {
     console.log( 'x' )
     // console.log( vue )
@@ -15,3 +15,6 @@ export default {
     b()
   }
 }
+
+obj.x()
+obj.y()
