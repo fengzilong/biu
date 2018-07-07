@@ -6,5 +6,8 @@ const outDir = path.resolve( process.cwd(), '.out' )
 
 biu( entry, {
   name: 'www',
-  outDir
+  outDir,
+  env: {
+    NODE_ENV: 'production'
+  }
 } )
