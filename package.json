@@ -18,5 +18,8 @@
     "mkdirp": "^0.5.1",
     "prettier": "^1.13.7",
     "resolve": "^1.8.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.0"
   }
 }
