@@ -8,11 +8,16 @@ const outDir = path.resolve( process.cwd(), '.out' )
 ;( async () => {
   await fse.emptyDir( outDir )
 
-  biu( entry, {
+  const startTime = Date.now()
+  
+  await biu( entry, {
     name: 'www',
     outDir,
     env: {
       NODE_ENV: 'production'
     }
   } )
+  
+  const costTime = Date.now() - startTime
+  console.log( 'CostTime: ', costTime / 1000 + 's' )
 } )()
