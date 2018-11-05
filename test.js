@@ -2,7 +2,7 @@ const path = require( 'path' )
 const biu = require( './lib' )
 const fse = require( 'fs-extra' )
 
-const entry = path.resolve( __dirname, 'examples/with-css/index.js' )
+const entry = path.resolve( __dirname, 'examples/duplicated-source/index.js' )
 const outDir = path.resolve( process.cwd(), '.out' )
 
 ;( async () => {
