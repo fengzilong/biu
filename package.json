@@ -13,8 +13,8 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "eslint lib --fix",
+    "lib/*.js": [
+      "eslint --fix",
       "git add"
     ]
   },

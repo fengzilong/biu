@@ -6,14 +6,14 @@ process.on( 'unhandledRejection', ( reason, p ) => {
   console.log( 'Unhandled Rejection at:', p, 'reason:', reason )
 } )
 
-const entry = path.resolve( __dirname, 'examples/duplicated-source/index.js' )
+const entry = path.resolve( __dirname, 'examples/complex/index.js' )
 const outDir = path.resolve( process.cwd(), '.out' )
 
 ;( async () => {
   await fse.emptyDir( outDir )
 
   const startTime = Date.now()
-  
+
   await biu( entry, {
     name: 'www',
     outDir,
@@ -22,7 +22,7 @@ const outDir = path.resolve( process.cwd(), '.out' )
     },
     watch: true,
   } )
-  
+
   const costTime = Date.now() - startTime
-  console.log( 'CostTime: ', costTime / 1000 + 's' )
+  console.log( 'CostTime: ', ( costTime / 1000 ) + 's' )
 } )()
