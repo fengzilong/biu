@@ -6,7 +6,7 @@ process.on( 'unhandledRejection', ( reason, p ) => {
   console.log( 'Unhandled Rejection at:', p, 'reason:', reason )
 } )
 
-const entry = path.resolve( __dirname, 'examples/complex/index.js' )
+const entry = path.resolve( __dirname, 'examples/complex/index.html' )
 const outDir = path.resolve( process.cwd(), '.out' )
 
 ;( async () => {
